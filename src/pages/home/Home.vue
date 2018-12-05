@@ -3,6 +3,7 @@
     <home-header></home-header>
     <div class="button-list">
       <Button type="primary" size="large" @click="toWatch">侦听器</Button>
+      <Button type="primary" size="large" @click="toUseMixin">项目组件的混入</Button>
     </div>
   </div>
 </template>
@@ -17,6 +18,9 @@ export default {
   methods: {
     toWatch () {
       this.$router.push('Watcher')
+    },
+    toUseMixin () {
+      this.$router.push('UseMixin')
     }
   }
 }
@@ -24,8 +28,9 @@ export default {
 
 <style lang="stylus" scoped>// 要使用stylus 需要安装两个第三方插件：stylus、stylus-loader
 .button-list
-  width: 100%
-  margin-top: 1.8rem;
+  width 100%
+  margin-top 1.8rem;
   Button
-    width: 50%;
+    width 50%;
+    margin-bottom .5rem
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header :title="title"></Header>
     <div class="content">
       <p class="ask">
         Ask a yes/no question:
@@ -21,12 +21,13 @@
 <script>
 import _ from 'lodash'
 import axios from 'axios'
-import Header from './components/Header'
+import Header from 'common/header/Header'
 // var _ = require('lodash')
 export default {
   name: 'Watcher',
   data () {
     return {
+      title: '侦听器用例',
       question: '',
       answer: 'I cannot give you an answer until you ask a question!',
       img: ''
