@@ -4,6 +4,7 @@
     <div class="button-list">
       <Button type="primary" size="large" @click="toWatch">侦听器</Button>
       <Button type="primary" size="large" @click="toUseMixin">项目组件的混入</Button>
+      <Button type="primary" size="large" @click="toLifeCycleGetData">测试渲染数据的生命周期钩子</Button>
     </div>
   </div>
 </template>
@@ -21,6 +22,9 @@ export default {
     },
     toUseMixin () {
       this.$router.push('UseMixin')
+    },
+    toLifeCycleGetData () {
+      this.$router.push('LifeCycleGetData')
     }
   }
 }

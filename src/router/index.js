@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import Watcher from '@/pages/watcher/Watcher'
 import UseMixin from '@/pages/usemixin/UseMixin'
+import LifeCycleGetData from '@/pages/lifecyclegetdata/LifeCycleGetData'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/UseMixin',
       name: 'UseMixin',
       component: UseMixin
+    },
+    {
+      path: '/LifeCycleGetData',
+      name: 'LifeCycleGetData',
+      component: LifeCycleGetData
     }
   ]
 })
