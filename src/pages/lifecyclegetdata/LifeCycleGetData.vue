@@ -23,10 +23,10 @@ export default {
   components: {
     Header
   },
-  beforeCreated () {
+  beforeCreate () {
     if (this.$refs.item != null) {
-      let html = this.$refs.item[0].innerHTML
-      console.log('beforeCreated', html)
+      let html = this.$refs.item[1].innerHTML
+      console.log('beforeCreate', html)
     }
   },
   created () {
@@ -73,8 +73,9 @@ export default {
   },
   destroyed () {
     if (this.$refs.item != null) {
-      let html = this.$refs.item[0].innerHTML
-      console.log('destroyed', html)
+      // destroy 之后item数组被清除，获取不到
+      // let html = this.$refs.item[0].innerHTML
+      // console.log('destroyed', html)
     }
   }
 }

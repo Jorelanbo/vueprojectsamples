@@ -4,6 +4,7 @@ import Home from '@/pages/home/Home'
 import Watcher from '@/pages/watcher/Watcher'
 import UseMixin from '@/pages/usemixin/UseMixin'
 import LifeCycleGetData from '@/pages/lifecyclegetdata/LifeCycleGetData'
+import ElementTree from '@/pages/elementTree/ElementTree'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/LifeCycleGetData',
       name: 'LifeCycleGetData',
       component: LifeCycleGetData
+    },
+    {
+      path: '/ElementTree',
+      name: 'ElementTree',
+      component: ElementTree
     }
   ]
 })
